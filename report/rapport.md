@@ -71,18 +71,43 @@ Det betyder inte automatiskt att nya kunder alltid är mest värdefulla, efterso
 
 ## Visualiseringar
 
-Jag skapade flera diagram med ggplot2 för att undersöka datan visuellt.
+Jag skapade flera diagram med ggplot2 för att undersöka datan visuellt. Diagrammen hjälper mig att se skillnader mellan grupper och samband mellan variabler.
 
-Diagrammen visar bland annat:
+### Total försäljning per produktkategori
 
-* total försäljning per produktkategori
-* ordervärde per kundtyp
-* ordervärde för returnerade och ej returnerade ordrar
-* försäljning per månad
-* samband mellan rabatt och ordervärde
-* returandel per produktkategori
+Det här diagrammet visar total försäljning per produktkategori. Electronics står för högst total försäljning i datasetet.
 
-Visualiseringarna gjorde det lättare att se skillnader mellan grupper. Till exempel blev det tydligt att vissa produktkategorier har mycket högre ordervärden än andra.
+![Total försäljning per produktkategori](../outputs/figures/total_forsaljning_per_kategori.png)
+
+### Ordervärde per kundtyp
+
+Det här boxplot-diagrammet visar hur ordervärdet skiljer sig mellan olika kundtyper. Nya kunder har högst genomsnittligt ordervärde, men det finns också stor variation inom grupperna.
+
+![Ordervärde per kundtyp](../outputs/figures/ordervarde_per_kundtyp.png)
+
+### Ordervärde för returnerade och ej returnerade ordrar
+
+Det här diagrammet jämför ordervärde mellan returnerade och ej returnerade ordrar. Skillnaden ser inte jättestor ut, vilket också stämmer med t-testet senare i rapporten.
+
+![Ordervärde för returnerade och ej returnerade ordrar](../outputs/figures/ordervarde_returnerad_order.png)
+
+### Total försäljning per månad
+
+Det här diagrammet visar hur försäljningen varierar mellan månaderna. Det gör det lättare att se om vissa månader sticker ut.
+
+![Total försäljning per månad](../outputs/figures/total_forsaljning_per_manad.png)
+
+### Samband mellan rabatt och ordervärde
+
+Det här diagrammet visar sambandet mellan rabatt och ordervärde. Linjen visar en enkel regressionslinje. Sambandet verkar inte vara särskilt starkt, vilket också syns i den enkla regressionen.
+
+![Samband mellan rabatt och ordervärde](../outputs/figures/rabatt_och_ordervarde.png)
+
+### Returandel per produktkategori
+
+Det här diagrammet visar returandel per produktkategori. Det gör det lättare att jämföra vilka kategorier som har högre eller lägre andel returnerade ordrar.
+
+![Returandel per produktkategori](../outputs/figures/returandel_per_kategori.png)
 
 ## T-test och konfidensintervall
 
