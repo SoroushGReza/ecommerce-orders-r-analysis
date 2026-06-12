@@ -49,7 +49,6 @@ Projektet är uppdelat i följande mappar:
 
 - `data/raw/` innehåller originaldatasetet
 - `data/processed/` används för städad data
-- `R/` används för egna R-funktioner
 - `scripts/` innehåller R-script för analysen
 - `outputs/figures/` används för diagram
 - `outputs/tables/` används för tabeller
