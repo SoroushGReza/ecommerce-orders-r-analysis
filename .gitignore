@@ -1,0 +1,11 @@
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+data/processed/
+outputs/figures/
+outputs/tables/
+
+*.html
+*.pdf
