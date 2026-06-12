@@ -80,6 +80,44 @@ Jag använder:
 - dplyr
 - Git och GitHub
 
+## Så här körs projektet
+
+För att köra projektet öppnar jag projektmappen i RStudio och kör scripten i ordning.
+
+Scripten ligger i mappen `scripts/` och ska köras i den här ordningen:
+
+1. `01_import_granska_data.R`
+2. `02_stada_data.R`
+3. `03_explorativ_analys.R`
+4. `04_visualiseringar.R`
+5. `05_ttest_konfidensintervall.R`
+6. `06_regression.R`
+
+Det första scriptet importerar och granskar datan. Därefter städas datan och sparas som en bearbetad fil. Sedan görs explorativ analys, visualiseringar, t-test och regression.
+
+## Rapport
+
+Rapporten finns här:
+
+[rapport/rapport.md](report/rapport.md)
+
+I rapporten sammanfattar jag analysen, visar diagram och tolkar resultaten från t-test och regression.
+
+## Figurer
+
+Diagrammen som används i rapporten finns i:
+
+`outputs/figures/`
+
+Jag har valt att lägga upp figurerna på GitHub eftersom de används direkt i rapporten och gör det lättare att granska projektet utan att behöva köra all kod först.
+
+## Reproducerbarhet
+
+För att återskapa analysen behöver man köra scripten i ordning från `01` till `06`. Datasetet finns i `data/raw/`, medan den städade datan skapas av scriptet `02_stada_data.R`.
+
+Filer i `data/processed/` och `outputs/tables/` ignoreras av Git eftersom de kan skapas på nytt från scripten.
+
+
 ## Kommentar
 
 Eftersom jag gör uppgiften individuellt försöker jag hålla projektet tydligt och lagom avancerat. Fokus ligger på att visa att jag kan använda de metoder vi har gått igenom i kursen.
